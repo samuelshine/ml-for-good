@@ -1,0 +1,19 @@
+{
+  "bootstrap_auc": {
+    "auc_a": 0.6574084740865954,
+    "auc_b": 0.6467064869975137,
+    "mean_difference": 0.010707834247926274,
+    "ci_low": 0.004295899173478693,
+    "ci_high": 0.01714952572965354,
+    "significant": true,
+    "n_bootstrap": 2000,
+    "model_a": "Stacking (heterogeneous)",
+    "model_b": "Logistic Regression (baseline)"
+  },
+  "mcnemar": {
+    "n01_a_right_b_wrong": 323,
+    "n10_a_wrong_b_right": 317,
+    "p_value": 0.8433442895838852,
+    "significant": false
+  }
+}

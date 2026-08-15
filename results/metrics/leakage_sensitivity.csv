@@ -1,0 +1,5 @@
+split_strategy,test_roc_auc,patients_in_both_splits,train_rows,test_rows
+Random row split (leaky),0.6698704559462242,6755,79472,19868
+Patient-grouped split (honest),0.675870818197987,0,79567,19773
+"  └ leaky split, patients ALSO in train",0.5663791649669023,8268,79472,8268
+"  └ leaky split, patients NOT in train",0.6871357072006599,0,79472,11600

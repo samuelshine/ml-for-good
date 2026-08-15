@@ -1,0 +1,5 @@
+step,rows_before,rows_after,rows_dropped,pct_dropped,reason
+raw,101766,101766,0,0.0,as downloaded from UCI
+drop_expired_hospice,101766,99343,2423,2.38,"discharge_disposition_id in [11, 13, 14, 19, 20, 21] = died or hospice; cannot be readmitted (Strack et al., 2014)"
+drop_invalid_gender,99343,99340,3,0.0,"gender='Unknown/Invalid' is a data-entry error, not a category; too few rows to model and it would pollute the fairness audit"
+deduplicate_patients,99340,69987,29353,29.55,keep first encounter per patient_nbr; later encounters leak outcomes across splits and over-weight frequent readmitters
