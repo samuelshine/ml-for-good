@@ -1,0 +1,25 @@
+feature,clinical_rationale,expected_effect
+total_prior_visits,"Sum of outpatient, emergency and inpatient visits in the prior year.",up
+prior_inpatient_flag,Any inpatient stay in the prior year.,up
+high_utilizer,Two or more prior inpatient stays: chronic instability.,up
+prior_emergency_ratio,Share of prior contacts that were emergencies; unplanned care signals poor disease control and weak primary-care access.,up
+service_intensity,Labs + procedures + medications: a proxy for how sick this stay was.,up
+meds_per_day,Medication count normalised by length of stay.,up
+labs_per_day,Lab count normalised by length of stay.,mixed
+procedures_per_day,Procedure count normalised by length of stay.,mixed
+num_meds_prescribed,How many of the 20 tracked drugs are active.,up
+num_med_changes,Count of drugs titrated up or down this stay. Regimen churn means the clinician had not yet found a stable dose at discharge.,up
+a1c_tested,"Whether HbA1c was measured. Strack et al. found measurement itself is associated with lower readmission, as it triggers regimen review.",down
+a1c_severity_ord,Ordinal HbA1c result: None < Norm < >7 < >8.,up
+glucose_severity_ord,Ordinal serum glucose: None < Norm < >200 < >300.,up
+n_distinct_diag_groups,Distinct clinical chapters across diag_1..3.,up
+diabetes_is_primary,Diabetes is the principal diagnosis.,up
+has_circulatory,Any circulatory diagnosis: the top comorbidity driver.,up
+comorbidity_burden,Number of diagnoses coded on the record.,up
+age_midpoint,Numeric midpoint of the 10-year age band.,up
+emergency_admission,Admitted through Emergency rather than electively.,up
+discharged_home,Discharged home without home-health support.,down
+long_stay,Stay longer than one week.,up
+weight_recorded,Weight was documented: a proxy for care thoroughness.,down
+payer_unknown,"No payer code recorded, which skews toward self-pay and uninsured patients. Kept explicitly so the fairness audit can see it.",up
+specialty_unknown,Admitting specialty not recorded.,mixed

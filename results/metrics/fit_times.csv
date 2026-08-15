@@ -1,0 +1,9 @@
+model,fit_seconds
+Logistic Regression (baseline),0.8
+Decision Tree (baseline),0.8
+Bagging (trees),6.2
+Random Forest (bagging),2.6
+XGBoost (boosting),1.4
+LightGBM (boosting),2.8
+Stacking (heterogeneous),54.3
+Soft Voting (heterogeneous),10.0

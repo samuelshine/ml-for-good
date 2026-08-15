@@ -1,0 +1,8 @@
+check,passed
+Target and its raw source excluded from features,True
+Identifiers excluded from features,True
+No patient appears in more than one split,True
+Test split is 20% of rows,True
+Class balance preserved across splits,True
+All engineered features are row-wise (no cross-row statistics),True
+"Imputers, scalers and encoders live inside the Pipeline",True
